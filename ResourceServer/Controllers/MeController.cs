@@ -13,7 +13,7 @@ namespace ResourceServer.Controllers
     public class MeController : ApiController
     {
         [Authorize]
-        [Scope("bio2")]
+        [Scope("bio")]
         public string Get()
         {
             return this.User.Identity.Name;
